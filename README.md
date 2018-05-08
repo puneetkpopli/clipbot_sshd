@@ -42,8 +42,6 @@ Your public key has been saved in ./ssh_host_rsa_key.pub.
 
 #### Update ~/catkin_ws/src/robot_sshd/src/robot_sshd_node.cpp for your setup
 
-I'll get around to adding support for command line parameters eventually :P
-
 * Change the hardcoded username 'user' and password 'pass' in `userAuthenticated()`
 * Update the `ssh_bind_options_set()` calls with the paths to your keys
 
