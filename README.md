@@ -1,5 +1,5 @@
 # robot_sshd
-This ROS project accepts connections from BotCtrl and forwards joystick input to an Arduino as Twist messages w/rosserial.
+This ROS project is a simple ssh daemon adapted from the sshd example bundled with libssh. It accepts connections from my <a href="https://github.com/static55/BotCtrl">BotCtrl</a> Android app and forwards the joystick input it receives to an Arduino as Twist messages via rosserial. The Arduino code will be made available shortly. Check <a href="https://github.com/static55">here</a>.
 
 # Installation
 
