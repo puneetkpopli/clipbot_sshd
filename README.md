@@ -6,7 +6,8 @@ This ROS project is a simple ssh daemon adapted from the sshd example bundled wi
 #### Install libssh if you don't already have it:
 
 `sudo apt-get install libssh-4`<br>
-`sudo apt-get install libssh-dev`
+`sudo apt-get install libssh-dev`<br>
+`sudo apt-get install ros-kinetic-rosserial`
 
 #### Clone repo
 
