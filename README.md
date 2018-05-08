@@ -1,5 +1,5 @@
-# robot_sshd
-This ROS project is a simple ssh daemon adapted from the sshd example bundled with libssh. It accepts connections from my <a href="https://github.com/static55/BotCtrl">BotCtrl</a> Android app and forwards the joystick input it receives to an Arduino as Twist messages via rosserial. The Arduino code will be made available shortly. Check <a href="https://github.com/static55">here</a>.
+# clipbot_sshd
+This ROS project is a simple ssh daemon adapted from the sshd example bundled with libssh. It accepts connections from my <a href="https://github.com/static55/BotCtrl">BotCtrl</a> Android app and forwards the joystick input it receives to an Arduino as Twist messages via rosserial. The Arduino code is <a href="https://github.com/static55/clipbot_arduino">here</a>.
 
 # Installation
 
@@ -12,14 +12,14 @@ This ROS project is a simple ssh daemon adapted from the sshd example bundled wi
 #### Clone repo
 
 `cd ~/catkin_ws/src`<br>
-`git clone https://github.com/static55/robot_sshd.git`
+`git clone https://github.com/static55/clipbot_sshd.git`
 
 #### Create sshd keys somewhere
 
 `user@clipbot:~/catkin_ws/src/$ cd ~`<br>
-`user@clipbot:~$ mkdir robot_sshd_keys`<br>
-`user@clipbot:~$ cd robot_sshd_keys`<br>
-`user@clipbot:~/robot_sshd_keys$ ssh-keygen -t DSA`<br>
+`user@clipbot:~$ mkdir clipbot_sshd_keys`<br>
+`user@clipbot:~$ cd clipbot_sshd_keys`<br>
+`user@clipbot:~/clipbot_sshd_keys$ ssh-keygen -t DSA`<br>
 
 ```
 Generating public/private DSA key pair.
@@ -30,7 +30,7 @@ Your identification has been saved in ./ssh_host_dsa_key.
 Your public key has been saved in ./ssh_host_dsa_key.pub.
 ```
 
-`user@clipbot:~/robot_sshd_keys$ ssh-keygen -t RSA`<br>
+`user@clipbot:~/clipbot_sshd_keys$ ssh-keygen -t RSA`<br>
 
 ```
 Generating public/private RSA key pair.
@@ -41,7 +41,7 @@ Your identification has been saved in ./ssh_host_rsa_key.
 Your public key has been saved in ./ssh_host_rsa_key.pub.
 ```
 
-#### Update ~/catkin_ws/src/robot_sshd/src/robot_sshd_node.cpp for your setup
+#### Update ~/catkin_ws/src/clipbot_sshd/src/clipbot_sshd_node.cpp for your setup
 
 * Change the hardcoded username 'user' and password 'pass' in `userAuthenticated()`
 * Update the `ssh_bind_options_set()` calls with the paths to your keys
@@ -51,7 +51,7 @@ Your public key has been saved in ./ssh_host_rsa_key.pub.
 `cd ~/catkin_ws`<br>
 `catkin_make`<br>
 `catkin_make install`<br>
-`roslaunch robot_sshd robot_sshd.launch`
+`roslaunch clipbot_sshd clipbot_sshd.launch`
 
 #### Start BotCtrl on your phone and connect
 
