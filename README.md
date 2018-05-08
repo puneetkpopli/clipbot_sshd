@@ -53,3 +53,7 @@ Your public key has been saved in ./ssh_host_rsa_key.pub.
 `roslaunch robot_sshd robot_sshd.launch`
 
 #### Start BotCtrl on your phone and connect
+
+# License
+
+Public Domain. Do whatever you want with it.
