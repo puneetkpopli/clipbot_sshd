@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(robot_sshd)
+project(clipbot_sshd)
 
 add_compile_options(-std=c++11)
 
@@ -20,7 +20,7 @@ include_directories(
   include
 )
 
-add_executable(${PROJECT_NAME}_node src/robot_sshd_node.cpp)
+add_executable(${PROJECT_NAME}_node src/clipbot_sshd_node.cpp)
 
 # Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_node
