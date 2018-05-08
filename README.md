@@ -44,5 +44,14 @@ Your public key has been saved in ./ssh_host_rsa_key.pub.
 
 I'll get around to adding support for command line parameters eventually :P
 
-1. Change the hardcoded username 'user' and password 'pass' in userAuthenticated()
-2. Update the ssh_bind_options_set() calls with the paths to your keys
+* Change the hardcoded username 'user' and password 'pass' in `userAuthenticated()`
+* Update the `ssh_bind_options_set()` calls with the paths to your keys
+
+#### Build and run
+
+`cd ~/catkin_ws`<br>
+`catkin_make`<br>
+`catkin_make install`<br>
+`roslaunch robot_sshd robot_sshd.launch`
+
+#### Start BotCtrl on your phone and connect
