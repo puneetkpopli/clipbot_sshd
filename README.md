@@ -1,5 +1,5 @@
 # clipbot_sshd
-This ROS project is a simple ssh daemon adapted from the sshd example bundled with libssh. It accepts connections from my <a href="https://github.com/static55/BotCtrl">BotCtrl</a> Android app and forwards the joystick input it receives to an Arduino as Twist messages via rosserial. The Arduino code is <a href="https://github.com/static55/clipbot_arduino">here</a>.
+This ROS project is a simple ssh daemon adapted from the sshd example bundled with libssh. It accepts connections from my <a href="https://github.com/static55/ClipbotCtrl">ClipbotCtrl</a> Android app and forwards the joystick input it receives to an Arduino as Twist messages via rosserial. The Arduino code is <a href="https://github.com/static55/clipbot_arduino">here</a>.
 
 # Installation
 
@@ -53,7 +53,7 @@ Your public key has been saved in ./ssh_host_rsa_key.pub.
 `catkin_make install`<br>
 `roslaunch clipbot_sshd clipbot_sshd.launch`
 
-#### Start BotCtrl on your phone and connect
+#### Start ClipbotCtrl on your phone and connect
 
 # License
 
