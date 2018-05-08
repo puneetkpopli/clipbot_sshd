@@ -136,7 +136,7 @@ int main(int argc, char **argv) {
   ssh_session session;   
   ssh_bind bindingOpts = ssh_bind_new();
 
-  ros::init(argc, argv, "robot_sshd_node");
+  ros::init(argc, argv, "clipbot_sshd_node");
   ros::NodeHandle nh;
   ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("twist", 1000);
 

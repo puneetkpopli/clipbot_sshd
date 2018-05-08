@@ -3,5 +3,5 @@
 		<param name="port" value="/dev/ttyUSB0"/>
 		<param name="baud" value="57600"/>
 	</node>
-	<node name="robot_sshd_node" pkg="robot_sshd" type="robot_sshd_node"/>
+	<node name="clipbot_sshd_node" pkg="clipbot_sshd" type="clipbot_sshd_node"/>
 </launch>
